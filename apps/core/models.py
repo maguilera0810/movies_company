@@ -3,7 +3,7 @@ from resources.enums.enums import StatusEnum
 
 STATUS_LIST = (
     (StatusEnum.draft.value, StatusEnum.draft.value),
-    (StatusEnum.publish.value, StatusEnum.publish.value),
+    (StatusEnum.enabled.value, StatusEnum.enabled.value),
 )
 
 

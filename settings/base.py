@@ -4,7 +4,8 @@ from django.utils import timezone
 import environ
 
 env = environ.Env(
-    DEBUG=(bool, False)
+    DEBUG=(bool, False),
+    # DELAY_API_URL=(str, "https://deelay.me")
 )
 
 
@@ -123,6 +124,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Celery settings
-CELERY_BROKER_URL = "redis://localhost:6379"
-CELERY_RESULT_BACKEND = "redis://localhost:6379"
+DELAY_API_URL = env("DELAY_API_URL")

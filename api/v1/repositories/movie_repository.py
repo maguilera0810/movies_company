@@ -9,6 +9,7 @@ class MovieRepository(BaseRepository):
             return Movie.objects.get(id=id)
         except Movie.DoesNotExist:
             return None
+
     def list(self, filters: dict = None):
         if filters is None:
             filters = {}
@@ -19,4 +20,3 @@ class MovieRepository(BaseRepository):
             movie.delete()
             return True
         return False
-

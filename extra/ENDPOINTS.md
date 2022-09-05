@@ -1,5 +1,6 @@
-Endpoints
-=========
+# Endpoints
+
+[Back to main readme](../README.md)
 
 Below is a list of the available endpoints, which will have 3 types of  [permissions](#permissions) :
 
@@ -13,17 +14,23 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 # Permissions
 
-- All Users :green_circle:
-- Auth Users :yellow_circle:
-- Admin Users :red_circle: :red_circle:
+[top](#endpoints) ⬆️
+
+- All Users 🟢
+- Auth Users 🟡
+- Admin Users 🔴
 
 # JWT
+
+[top](#endpoints) ⬆️
+
+Before you can use the endpoints, you must get your credentials (you can use these [test accounts](../README.md#test-accounts-👥)) or create a new one ([see](#create-user))
 
 ## Get Token
 
 - Method: POST
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/token/
@@ -41,7 +48,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2Mjg1NjQxOCwiaWF0IjoxNjYyMjUxNjE4LCJqdGkiOiJlYjhhNzJmZjc3OWI0ZGZlOGNlYTgzODg0NjU0YzlhMCIsInVzZXJfaWQiOjV9.v75DvVOoRuhPkwfisAyz6PWztyrN5_zkVXCYR4_Z-2E",
     "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyMjk0ODE4LCJpYXQiOjE2NjIyNTE2MTgsImp0aSI6IjYwNGIzNGIxYjJhZDRiMGQ5MmNmNDU4Mzg0MGExMTM4IiwidXNlcl9pZCI6NX0.vnCTjUBrmYSxD6Xu_ca_ls4QhMriYShYIKlYdMUtyF0"
@@ -52,7 +58,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: POST
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/refresh/
@@ -69,7 +75,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
     "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYyMjk1MTE2LCJpYXQiOjE2NjIyNTE2MTgsImp0aSI6IjNiOGRjNWUzMTZjNTRmYTU5ZmI5NmI3MzJlZGY3ZDE4IiwidXNlcl9pZCI6NX0.OJ1qGTRgutQaygK5noW5dkfhYQ-DssjvoVbVfr_rmPs"
 }
@@ -79,7 +84,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: POST
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/verify/
@@ -96,7 +101,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {}
 ```
 
@@ -104,11 +108,13 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 # User
 
+[top](#endpoints) ⬆️
+
 ## Create User
 
 - Method: POST
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/user/
@@ -131,7 +137,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
     "id": 6,
     "first_name": "Mauricio",
@@ -149,7 +154,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/user/{{user_id}}
@@ -158,7 +163,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
     "id": 6,
     "first_name": "Mauricio",
@@ -176,7 +180,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/user/
@@ -185,7 +189,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 [ 
     ... ,
     {
@@ -209,7 +212,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
   - The user only will be able to update his own data
 - Method: PUT
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/verify/
@@ -232,7 +235,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
     "id": 6,
     "first_name": "Mauricio",
@@ -250,7 +252,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: DELETE
 - Permissions:
-  - Admin Users :red_circle:
+  - [Admin Users](#permissions) 🔴
 
 ```
 {{url}}/api/v1/user/{{user_id}} 
@@ -259,7 +261,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {}
 ```
 
@@ -267,13 +268,15 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 # Alias
 
+[top](#endpoints) ⬆️
+
 ## Create Alias
 
 - Note:
   - Users will only be able to create their own aliases
 - Method: POST
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/user/alias/
@@ -290,11 +293,10 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
     "id": 6,
     "name": "Pepito",
-    "user": 1,
+    "user": 1
 }
 ```
 
@@ -302,7 +304,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/user/alias/{{alias_id}}
@@ -311,11 +313,10 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
     "id": 6,
     "name": "Pepito",
-    "user": 1,
+    "user": 1
 }
 ```
 
@@ -323,7 +324,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/user/alias/
@@ -332,7 +333,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 [ 
     ... ,
     {
@@ -350,7 +350,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
   - Users will only be able to update their own aliases
 - Method: PUT
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/user/alias/{{alias_id}}
@@ -367,7 +367,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
   "id": 6,
   "name": "Manolo",
@@ -381,8 +380,8 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
   - Users will only be able to delete their own aliases
 - Method: DELETE
 - Permissions:
-  - All Users :green_circle:
-  - Auth Users :yellow_circle:
+  - [All Users](#permissions) 🟢
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/user/alias/{{alias_id}}
@@ -391,7 +390,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {}
 ```
 
@@ -399,11 +397,13 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 # Movie
 
+[top](#endpoints) ⬆️
+
 ## Create Movie
 
 - Method: POST
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/movie/
@@ -425,7 +425,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
   "id": 1,
   "title": "Star Wars",
@@ -443,7 +442,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/movie/{{movie_id}}
@@ -452,7 +451,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
   "id": 1,
   "title": "Star Wars",
@@ -470,7 +468,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/movie/
@@ -479,7 +477,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 [ 
   ... ,
   {
@@ -501,7 +498,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: PUT
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/movie/{{movie_id}}
@@ -523,7 +520,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
   "id": 1,
   "title": "King Lion",
@@ -541,7 +537,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: DELETE
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/movie/{{movie_id}}
@@ -550,7 +546,22 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
+{}
+```
+
+## Enabled Movie
+
+- Method: PUT
+- Permissions:
+  - [Auth Users](#permissions) 🟡
+
+```
+{{url}}/api/v1/movie/{{movie_id}}/enabled/
+```
+
+- Example Response:
+
+```json
 {}
 ```
 
@@ -558,11 +569,13 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 # Genre
 
+[top](#endpoints) ⬆️
+
 ## Create Genre
 
 - Method: POST
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/genre/
@@ -579,7 +592,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 201
 {
     "id": 1,
     "name": "Suspenso",
@@ -591,7 +603,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/genre/{{genre_id}}
@@ -600,7 +612,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
   "id": 1,
   "name": "Suspenso",
@@ -612,7 +623,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: GET
 - Permissions:
-  - All Users :green_circle:
+  - [All Users](#permissions) 🟢
 
 ```
 {{url}}/api/v1/genre/
@@ -621,7 +632,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 [ 
   ... ,
   {
@@ -637,7 +647,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: PUT
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/movie/{{movie_id}}
@@ -654,7 +664,6 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {
   "id": 1,
   "name": "Terror",
@@ -666,7 +675,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 - Method: DELETE
 - Permissions:
-  - Auth Users :yellow_circle:
+  - [Auth Users](#permissions) 🟡
 
 ```
 {{url}}/api/v1/genre/{{genre_id}}
@@ -675,6 +684,5 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 - Example Response:
 
 ```json
-# status 200
 {}
 ```
