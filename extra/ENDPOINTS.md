@@ -40,7 +40,7 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "username": maguilera0810@gmail.com,
+    "username": "maguilera0810@gmail.com",
     "pasword": "123456"
 }
 ```
@@ -124,13 +124,13 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "first_name": "Mauricio",
-    "last_name": "Aguilera",
-    "email": "mauricio+006@gmail.com",
-    "password": "123456",
-    "is_staff": true,
-    "is_active": true,
-    "is_superuser": false
+  "first_name": "Mauricio",
+  "last_name": "Aguilera",
+  "email": "mauricio+006@gmail.com",
+  "password": "123456",
+  "is_staff": true,
+  "is_active": true,
+  "is_superuser": false
 }
 ```
 
@@ -138,15 +138,15 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "id": 6,
-    "first_name": "Mauricio",
-    "last_name": "Aguilera",
-    "email": "mauricio+006@gmail.com",
-    "username": "mauricio+006@gmail.com",
-    "aliases": [...],
-    "movies_as_actor": [...],
-    "movies_as_producer": [...],
-    "movies_as_director": [...]
+  "id": 6,
+  "first_name": "Mauricio",
+  "last_name": "Aguilera",
+  "email": "mauricio+006@gmail.com",
+  "username": "mauricio+006@gmail.com",
+  "aliases": [],
+  "movies_as_actor": [],
+  "movies_as_producer": [],
+  "movies_as_director": []
 }
 ```
 
@@ -164,15 +164,15 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "id": 6,
-    "first_name": "Mauricio",
-    "last_name": "Aguilera",
-    "email": "mauricio+006@gmail.com",
-    "username": "mauricio+006@gmail.com",
-    "aliases": [...],
-    "movies_as_actor": [...],
-    "movies_as_producer": [...],
-    "movies_as_director": [...]
+  "id": 6,
+  "first_name": "Mauricio",
+  "last_name": "Aguilera",
+  "email": "mauricio+006@gmail.com",
+  "username": "mauricio+006@gmail.com",
+  "aliases": [],
+  "movies_as_actor": [],
+  "movies_as_producer": [],
+  "movies_as_director": []
 }
 ```
 
@@ -190,19 +190,17 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 [ 
-    ... ,
-    {
-        "id": 6,
-        "first_name": "Mauricio",
-        "last_name": "Aguilera",
-        "email": "mauricio+006@gmail.com",
-        "username": "mauricio+006@gmail.com",
-        "aliases": [...],
-        "movies_as_actor": [...],
-        "movies_as_producer": [...],
-        "movies_as_director": [...]
-    },
-    ...
+  {
+    "id": 6,
+    "first_name": "Mauricio",
+    "last_name": "Aguilera",
+    "email": "mauricio+006@gmail.com",
+    "username": "mauricio+006@gmail.com",
+    "aliases": [],
+    "movies_as_actor": [],
+    "movies_as_producer": [],
+    "movies_as_director": []
+  }
 ]
 ```
 
@@ -222,13 +220,13 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "first_name": "Mauricio",
-    "last_name": "Aguilera",
-    "email": "mauricio+006@gmail.com",
-    "password": "123456",
-    "is_staff": true,
-    "is_active": true,
-    "is_superuser": false
+  "first_name": "Mauricio",
+  "last_name": "Aguilera",
+  "email": "mauricio+006@gmail.com",
+  "password": "123456",
+  "is_staff": true,
+  "is_active": true,
+  "is_superuser": false
 }
 ```
 
@@ -236,15 +234,15 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "id": 6,
-    "first_name": "Mauricio",
-    "last_name": "Aguilera",
-    "email": "mauricio+006@gmail.com",
-    "username": "mauricio+006@gmail.com",
-    "aliases": [...],
-    "movies_as_actor": [...],
-    "movies_as_producer": [...],
-    "movies_as_director": [...]
+  "id": 6,
+  "first_name": "Mauricio",
+  "last_name": "Aguilera",
+  "email": "mauricio+006@gmail.com",
+  "username": "mauricio+006@gmail.com",
+  "aliases": [],
+  "movies_as_actor": [],
+  "movies_as_producer": [],
+  "movies_as_director": []
 }
 ```
 
@@ -286,7 +284,7 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "name": "Pepito"
+  "name": "Pepito"
 }
 ```
 
@@ -294,9 +292,9 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "id": 6,
-    "name": "Pepito",
-    "user": 1
+  "id": 6,
+  "name": "Pepito",
+  "user": 1
 }
 ```
 
@@ -314,9 +312,9 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "id": 6,
-    "name": "Pepito",
-    "user": 1
+  "id": 6,
+  "name": "Pepito",
+  "user": 1
 }
 ```
 
@@ -334,13 +332,11 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 [ 
-    ... ,
-    {
-        "id": 6,
-        "name": "Pepito",
-        "user": 1
-    },
-    ...
+  {
+    "id": 6,
+    "name": "Pepito",
+    "user": 1
+  }
 ]
 ```
 
@@ -360,7 +356,7 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 {
-    "name": "Manolo"
+  "name": "Manolo"
 }
 ```
 
@@ -431,10 +427,10 @@ Before you can use the endpoints, you must get your credentials (you can use the
   "release": "1977-05-25",
   "code": "movie-1",
   "status": "draft",
-  "genres": [ ... ],
-  "casting": [ ... ],
-  "producers": [ ... ],
-  "directors": [ ... ]
+  "genres": [],
+  "casting": [],
+  "producers": [],
+  "directors": []
 }
 ```
 
@@ -457,10 +453,10 @@ Before you can use the endpoints, you must get your credentials (you can use the
   "release": "1977-05-25",
   "code": "movie-1",
   "status": "draft",
-  "genres": [ ... ],
-  "casting": [ ... ],
-  "producers": [ ... ],
-  "directors": [ ... ]
+  "genres": [],
+  "casting": [],
+  "producers": [],
+  "directors": []
 }
 ```
 
@@ -478,19 +474,17 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 [ 
-  ... ,
   {
     "id": 1,
     "title": "Star Wars",
     "release": "1977-05-25",
     "code": "movie-1",
     "status": "draft",
-    "genres": [ ... ],
-    "casting": [ ... ],
-    "producers": [ ... ],
-    "directors": [ ... ]
-  },
-  ...
+    "genres": [],
+    "casting": [],
+    "producers": [],
+    "directors": []
+  }
 ]
 ```
 
@@ -526,10 +520,10 @@ Before you can use the endpoints, you must get your credentials (you can use the
   "release": "2005-04-21",
   "code": "movie-1",
   "status": "draft",
-  "genres": [ ... ],
-  "casting": [ ... ],
-  "producers": [ ... ],
-  "directors": [ ... ]
+  "genres": [],
+  "casting": [],
+  "producers": [],
+  "directors": []
 }
 ```
 
@@ -633,13 +627,11 @@ Before you can use the endpoints, you must get your credentials (you can use the
 
 ```json
 [ 
-  ... ,
   {
     "id": 1,
     "name": "Suspenso",
     "code": "genre-1"
-  },
-  ...
+  }
 ]
 ```
 
