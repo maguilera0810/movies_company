@@ -4,12 +4,12 @@
 
 # Requirements
 
-1. Provide a REST API to access movies and persons models. ✅ ([see](ENDPOINTS.md#endpoints))
-2. Safe methods are publicly available, no authentication is required. ✅ ([see](ENDPOINTS.md#permissions))
-3. Unsafe methods are only available to authenticated users. ✅ ([see](ENDPOINTS.md#permissions))
-4. Movie documents must include references or full documents to persons in their different roles. ✅ ([see](ENDPOINTS.md#list-movies))
-5. Person documents must include references or full documents to movies in the different roles the Person has. ✅ ([see](ENDPOINTS.md#list-users))
-6. For every movie you need to create a slug (maybe you heard of it as a ‘fake id’ or ‘friendly id’?). Explain the solution. ✅
+1. **Provide a REST API to access movies and persons models.** ✅ ([see](ENDPOINTS.md#endpoints))
+2. **Safe methods are publicly available, no authentication is required.** ✅ ([see](ENDPOINTS.md#permissions))
+3. **Unsafe methods are only available to authenticated users.** ✅ ([see](ENDPOINTS.md#permissions))
+4. **Movie documents must include references or full documents to persons in their different roles**. ✅ ([see](ENDPOINTS.md#list-movies))
+5. **Person documents must include references or full documents to movies in the different roles the Person has.** ✅ ([see](ENDPOINTS.md#list-users))
+6. **For every movie you need to create a slug (maybe you heard of it as a ‘fake id’ or ‘friendly id’?). Explain the solution.** ✅
 
     **Explanation**
 
