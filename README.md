@@ -15,7 +15,7 @@ This is an example of my code, using Django as the main framework. Here you will
 - [Endpoints](#endpointsextraendpointsmd-📩) 📩
 - [Tools](#tools-🛠️) 🛠️
 - [Resume Tasks and Explanations](#resume-tasks-and-explanationsextraresumemd-📚) 📚
-- [Authors](#authors-✒️) ✒️
+- [Authors](#authors-️) ✒️
 
 ---
 
