@@ -31,6 +31,9 @@ urlpatterns += [
                                   'delete': 'delete_movie',
                                   }),
          name='movie_id_controller'),
+    path('movie/<int:id>/enabled/',
+         MovieController.as_view({'put': 'enabled_movie'}),
+         name='movie_id_controller'),
 ]
 
 urlpatterns += [

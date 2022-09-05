@@ -45,7 +45,7 @@ class Movie(DatedModel, StatusModel):
     title = models.CharField(max_length=50, null=False, blank=False)
     code = models.SlugField(max_length=60, null=True)
     release = models.DateField()
-    casting = models.ManyToManyField(User, related_name='movie_actors')
+    casting = models.ManyToManyField(User, related_name='movie_casting')
     producers = models.ManyToManyField(User, related_name='movie_producers')
     directors = models.ManyToManyField(User, related_name='movie_directors')
     genres = models.ManyToManyField(Genre, related_name='movie_genre',

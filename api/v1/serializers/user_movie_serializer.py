@@ -71,7 +71,7 @@ class UserPublicSerializer(ModelSerializer):
         return serializer.data
 
     def get_movies_as_actor(self, instance):
-        movies = instance.movie_actors.all()
+        movies = instance.movie_casting.all()
         serializer = MovieSerializer(movies, many=True)
         return serializer.data
 
