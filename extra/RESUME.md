@@ -121,4 +121,4 @@
 
 1. ~~Tests~~ ❌
 2. ~~Docker, docker-compose.yml, seeds and README file to run it locally.~~ ❌
-3. **Justification of chosen libraries/frameworks against other popular choices.** ✅([see](../README.md#tools-🛠️))
+3. **Justification of chosen libraries/frameworks against other popular choices.** ✅([see](../README.md#tools-))
