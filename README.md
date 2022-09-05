@@ -10,11 +10,12 @@ This is an example of my code, using Django as the main framework. Here you will
 - [Prerequisites](#prerequisites-) 📋
 - [Requirements](#requirements-) 🔧
 - [Setting Environment Variables](#setting-environment-variables-) 📦
-- [Running the project](#running-the-project-) ⚙️
+- [Running the project](#running-the-project-️) ⚙️
+- [Running the project](#running-the-project-️) ⚙️
 - [Test Accounts](#test-accounts-) 👥
-- [Endpoints](#endpointsextraendpointsmd-) 📩
+- [Endpoints](#endpoints-) 📩
 - [Tools](#tools-) 🛠️
-- [Resume Tasks and Explanations](#resume-tasks-and-explanationsextraresumemd-) 📚
+- [Resume Tasks and Explanations](#resume-tasks-and-explanations-) 📚
 - [Authors](#authors-️) ✒️
 
 ---
