@@ -7,14 +7,14 @@ This is an example of my code, using Django as the main framework. Here you will
 
 # Index
 
-- [Prerequisites](#prerequisites-📋) 📋
-- [Requirements](#requirements-🔧) 🔧
-- [Setting Environment Variables](#setting-environment-variables-📦) 📦
-- [Running the project](#running-the-project-⚙️) ⚙️
-- [Test Accounts](#test-accounts-👥) 👥
-- [Endpoints](#endpointsextraendpointsmd-📩) 📩
-- [Tools](#tools-🛠️) 🛠️
-- [Resume Tasks and Explanations](#resume-tasks-and-explanationsextraresumemd-📚) 📚
+- [Prerequisites](#prerequisites-) 📋
+- [Requirements](#requirements-) 🔧
+- [Setting Environment Variables](#setting-environment-variables-) 📦
+- [Running the project](#running-the-project-) ⚙️
+- [Test Accounts](#test-accounts-) 👥
+- [Endpoints](#endpointsextraendpointsmd-) 📩
+- [Tools](#tools-) 🛠️
+- [Resume Tasks and Explanations](#resume-tasks-and-explanationsextraresumemd-) 📚
 - [Authors](#authors-️) ✒️
 
 ---
@@ -34,8 +34,6 @@ sudo apt update
 sudo apt install python3
 ```
 
-- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-linux/)
-  
 # Requirements 🔧
 
 [Index](#index)
@@ -149,8 +147,6 @@ Below is a list of the available endpoints, which will have 3 types of permissio
 - [pdb](https://docs.python.org/3/library/pdb.html) - it's a really easy python debugger, to check a code snippets or whole streams, recommended for beginners in debugging
   
 - [threading](https://docs.python.org/3/library/threading.html) - is a simple way to carry out tasks running on background
-
-- [Redis](https://rometools.github.io/rome/) - Usado para generar RSS
 
 # [Resume Tasks and Explanations](extra/RESUME.md) 📚
 

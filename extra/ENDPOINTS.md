@@ -24,7 +24,7 @@ Below is a list of the available endpoints, which will have 3 types of  [permiss
 
 [top](#endpoints) ⬆️
 
-Before you can use the endpoints, you must get your credentials (you can use these [test accounts](../README.md#test-accounts-👥)) or create a new one ([see](#create-user))
+Before you can use the endpoints, you must get your credentials (you can use these [test accounts](../README.md#test-accounts-)) or create a new one ([see](#create-user))
 
 ## Get Token
 
