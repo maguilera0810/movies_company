@@ -96,9 +96,6 @@
 
     # Movie Repository called by the service
     class MovieRepository(BaseRepository):
-        
-        def __init__(self) -> None:
-            self.repo = MovieRepository()
 
         def list(self, filters: dict = None):
             if filters is None:
