@@ -4,16 +4,16 @@
 
 # Requirements
 
-1. Provide a REST API to access movies and persons models. ✅ ([see](ENDPOINTS.md#endpoints))
-2. Safe methods are publicly available, no authentication is required. ✅ ([see](ENDPOINTS.md#permissions))
-3. Unsafe methods are only available to authenticated users. ✅ ([see](ENDPOINTS.md#permissions))
-4. Movie documents must include references or full documents to persons in their different roles. ✅ ([see](ENDPOINTS.md#list-movies))
-5. Person documents must include references or full documents to movies in the different roles the Person has. ✅ ([see](ENDPOINTS.md#list-users))
-6. For every movie you need to create a slug (maybe you heard of it as a ‘fake id’ or ‘friendly id’?). Explain the solution. ✅
+1. **Provide a REST API to access movies and persons models.** ✅ ([see](ENDPOINTS.md#endpoints))
+2. **Safe methods are publicly available, no authentication is required.** ✅ ([see](ENDPOINTS.md#permissions))
+3. **Unsafe methods are only available to authenticated users.** ✅ ([see](ENDPOINTS.md#permissions))
+4. **Movie documents must include references or full documents to persons in their different roles**. ✅ ([see](ENDPOINTS.md#list-movies))
+5. **Person documents must include references or full documents to movies in the different roles the Person has.** ✅ ([see](ENDPOINTS.md#list-users))
+6. **For every movie you need to create a slug (maybe you heard of it as a ‘fake id’ or ‘friendly id’?). Explain the solution.** ✅
 
     **Explanation**
 
-    I first thought of using [slugify]("https://docs.djangoproject.com/en/4.1/ref/utils/#django.utils.text.slugify"), but ran into the case where this data was used as a reference for other things (eg locales), this would require more maintenance, so I chose to create the slug on save instance with a combination of model name and id
+    I first thought of using [slugify]("https://docs.djangoproject.com/en/4.1/ref/utils/#django.utils.text.slugify") from django.utils.text, but ran into the case where this data was used as a reference for other things (eg locales), this would require more maintenance, so I chose to create the slug on save instance with a combination of model name and id
 
     ```python
     # Movie Model Example save method
@@ -112,9 +112,9 @@
 # Deliverables
 
 1. **The source code must be submitted to a shared repository (Gitlab, Github or similar). ✅**
-2. **The list of available endpoints and supported methods documented (could be in the same Github repo). ✅**
+2. **The list of available endpoints and supported methods documented (could be in the same Github repo). ✅** ([see](ENDPOINTS.md))
 3. **Postman collection to play with your solution. ✅** ([see](/MOVIES.postman_collection.json))
-4. **List of used libraries/frameworks. ✅**
+4. **List of used libraries/frameworks.** [see](../README.md#tools-))
 5. **README file with the steps to run/setup the application ✅**
 
 # Extra Credit

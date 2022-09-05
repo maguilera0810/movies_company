@@ -10,11 +10,11 @@ This is an example of my code, using Django as the main framework. Here you will
 - [Prerequisites](#prerequisites-) 📋
 - [Requirements](#requirements-) 🔧
 - [Setting Environment Variables](#setting-environment-variables-) 📦
-- [Running the project](#running-the-project-) ⚙️
+- [Running the project](#running-the-project-️) ⚙️
 - [Test Accounts](#test-accounts-) 👥
-- [Endpoints](#endpointsextraendpointsmd-) 📩
-- [Tools](#tools-) 🛠️
-- [Resume Tasks and Explanations](#resume-tasks-and-explanationsextraresumemd-) 📚
+- [Endpoints](#endpoints-) 📩
+- [Tools](#tools-️) 🛠️
+- [Resume Tasks and Explanations](#resume-tasks-and-explanations-) 📚
 - [Authors](#authors-️) ✒️
 
 ---
@@ -89,6 +89,8 @@ python manage runserver --settings=settings.prod
 
 # Test Accounts 👥
 
+[Index](#index)
+
 In order to play with the API, you can use these accounts or create your own ([see](extra/ENDPOINTS.md#create-user)).
 
 - Normal User
@@ -149,6 +151,8 @@ Below is a list of the available endpoints, which will have 3 types of permissio
 - [threading](https://docs.python.org/3/library/threading.html) - is a simple way to carry out tasks running on background
 
 # [Resume Tasks and Explanations](extra/RESUME.md) 📚
+
+[Index](#index)
 
 - [Requirements](extra/RESUME.md#requirements)
 - [Extra Features](extra/RESUME.md#extra-feature)
