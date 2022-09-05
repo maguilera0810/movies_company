@@ -150,6 +150,8 @@ Below is a list of the available endpoints, which will have 3 types of permissio
   
 - [threading](https://docs.python.org/3/library/threading.html) - is a simple way to carry out tasks running on background
 
+- [SQLite](https://www.sqlite.org/index.html) - is  a small, fast, self-contained, high-reliability, full-featured, SQL database engine. For this project a powerful database manager was not needed, like PostgreSQL for example.
+
 # [Resume Tasks and Explanations](extra/RESUME.md) 📚
 
 [Index](#index)
