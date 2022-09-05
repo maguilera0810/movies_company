@@ -13,7 +13,7 @@
 
     **Explanation**
 
-    I first thought of using [slugify]("https://docs.djangoproject.com/en/4.1/ref/utils/#django.utils.text.slugify"), but ran into the case where this data was used as a reference for other things (eg locales), this would require more maintenance, so I chose to create the slug on save instance with a combination of model name and id
+    I first thought of using [slugify]("https://docs.djangoproject.com/en/4.1/ref/utils/#django.utils.text.slugify") from django.utils.text, but ran into the case where this data was used as a reference for other things (eg locales), this would require more maintenance, so I chose to create the slug on save instance with a combination of model name and id
 
     ```python
     # Movie Model Example save method
@@ -112,9 +112,9 @@
 # Deliverables
 
 1. **The source code must be submitted to a shared repository (Gitlab, Github or similar). ✅**
-2. **The list of available endpoints and supported methods documented (could be in the same Github repo). ✅**
+2. **The list of available endpoints and supported methods documented (could be in the same Github repo). ✅** ([see](ENDPOINTS.md))
 3. **Postman collection to play with your solution. ✅** ([see](/MOVIES.postman_collection.json))
-4. **List of used libraries/frameworks. ✅**
+4. **List of used libraries/frameworks.** [see](../README.md#tools-))
 5. **README file with the steps to run/setup the application ✅**
 
 # Extra Credit
